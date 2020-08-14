@@ -23,3 +23,9 @@ workflows:
   - name: filternone
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
+  - name: filterregexerror
+    subclass: wdl
+    primaryDescriptorPath: /Dockstore.wdl
+    filters:
+      branches:
+        - /[/
