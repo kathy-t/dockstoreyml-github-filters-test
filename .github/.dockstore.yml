@@ -3,19 +3,23 @@ workflows:
   - name: filterbranch
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
-    filter:
-      - develop
+    filters:
+      branches:
+        - /develop/
   - name: filtertag
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
-    filter:
-      - tags/1.0
+    filters:
+      tags:
+        - 1.0
   - name: filtermulti
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
-    filter:
-      - heads/dev*
-      - 1.*
+    filters:
+      branches:
+        - dev*
+      tags:
+        - /1\.\d+/
   - name: filternone
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
