@@ -23,6 +23,7 @@ workflows:
   - name: filternone
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
+    publish: false
   - name: filterregexerror
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
