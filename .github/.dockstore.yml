@@ -6,26 +6,3 @@ workflows:
     filters:
       branches:
         - /develop/
-  - name: filtertag
-    subclass: wdl
-    primaryDescriptorPath: /Dockstore.wdl
-    filters:
-      tags:
-        - 1.0
-  - name: filtermulti
-    subclass: wdl
-    primaryDescriptorPath: /Dockstore.wdl
-    filters:
-      branches:
-        - dev*
-      tags:
-        - /1\.\d+/
-  - name: filternone
-    subclass: wdl
-    primaryDescriptorPath: /Dockstore.wdl
-  - name: filterregexerror
-    subclass: wdl
-    primaryDescriptorPath: /Dockstore.wdl
-    filters:
-      branches:
-        - /[/
