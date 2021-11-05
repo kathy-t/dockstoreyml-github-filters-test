@@ -3,6 +3,6 @@ workflows:
   - name: filterbranch
     subclass: wdl
     primaryDescriptorPath: /Dockstore.wdl
-    filters:
+    filter:
       branches:
         - /master/
